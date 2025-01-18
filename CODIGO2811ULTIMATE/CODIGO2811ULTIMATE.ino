@@ -1,6 +1,5 @@
 //codigo com LDR - luminosidade 21/11/224
 
-//LED - Azul > DI - Roxo > VCC - Cinza > GND
 
 #define NOTE_B0  31
 #define NOTE_C1  33
@@ -247,7 +246,6 @@ const char htmlPage[] PROGMEM = R"rawliteral(
             fetch('/luminosidade')
                 .then(response => response.text())
                 .then(data => {
-                    // Exibe a luminosidade em formato de porcentagem
                     document.getElementById('luminosidade-text').innerText = data;
                 });
         }
